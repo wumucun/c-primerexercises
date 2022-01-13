@@ -5,7 +5,7 @@
 #include<algorithm>
 #include<iostream>
 #include<string>
-
+#include<vector>
 using namespace std;
 
 //按照字典序重排去除重复的
@@ -16,8 +16,8 @@ void elimDups(vector<string> & words) {
 }
 
 int main() {
-    vector<string> words = {"the quick red fox jumps over tne slow red turtle"};
-    elimeDups(words);
+    vector<string> words = {"the", "quick", "red", "fox", "jumps", "over", "tne", "slow", "red", "turtle"};
+    elimDups(words);
     for (auto& str : words)
         cout << str << " ";
     cout << endl;
